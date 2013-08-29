@@ -27,12 +27,12 @@ class Robots extends Model
         ));
 
         // Year cannot be less than zero
-        if ($his->year < 0) {
-            $his->appendMessage(new Message("The year should be positive"));
+        if ($this->year < 0) {
+            $this->appendMessage(new Message("The year should be positive"));
         }
 
         // Check if any messages have been produced
-        if ($his->validationHasFailed() == true) {
+        if ($this->validationHasFailed() == true) {
             return false;
         }
     }

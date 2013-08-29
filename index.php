@@ -88,7 +88,7 @@ $app->get('/api/robots/{id:[0-9]+}', function ($id) use ($app) {
     return $response;
 });
 // Adds a new robot
-$app->post('/api/robots/', function() use ($app) {
+$app->post('/api/robots', function() use ($app) {
 
     $robot = $app->request->getJsonRawBody();
 
@@ -115,7 +115,7 @@ $app->post('/api/robots/', function() use ($app) {
 
         // Send errors to the client
         $errors = array();
-        foreach ($status->getMessage() as $message) {
+        foreach ($status->getMessages() as $message) {
             $errors[] = $message->getMessage();
         }
 
@@ -152,7 +152,7 @@ $app->put('/api/robots/{id:[0-9]+}', function($id) use ($app) {
         foreach ($status->getMessages() as $message) {
             $errors[] = $message->getMessage();
         }
-        $response->setJsonContent(array('status' => 'ERROR', 'messages' => $error));
+        $response->setJsonContent(array('status' => 'ERROR', 'messages' => $errors));
     }
     return $response;
 });
@@ -160,12 +160,12 @@ $app->put('/api/robots/{id:[0-9]+}', function($id) use ($app) {
 $app->delete('/api/robots/{id:[0-9]+}', function($id) use ($app) {
 
     $phql = "DELETE FROM Robots WHERE id = :id:";
-    $status = $app->modelsManger->executeQuery($phql, array(
+    $status = $app->modelsManager->executeQuery($phql, array(
         'id' => $id
     ));
 
     //Create a response
-    $response = new Phalcon\Http|Response();
+    $response = new Phalcon\Http\Response();
 
     if ($status->success() == true) {
         $response->setJsonContent(array('status' => 'OK'));
