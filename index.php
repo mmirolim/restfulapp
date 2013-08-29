@@ -24,6 +24,22 @@ $app = new \Phalcon\Mvc\Micro($di);
 
 // Define the routes here
 
+// Load Web app
+$app->get('/', function() {
+
+    // Create a response
+    $response = new Phalcon\Http\Response();
+
+    // Set the Content-type header
+    $response->setContentType('text/html');
+
+    // Pass the content of a file
+    $response->setContent(file_get_contents("webapp.html"));
+
+    // Return response
+    return $response;
+});
+
 // Retrieves all robots
 $app->get('/api/robots', function() use ($app) {
 
@@ -193,3 +209,4 @@ $app->handle();
 } catch (\Phalcon\Exception $e) {
     echo "PhalconException: ", $e->getMessage();
 }
+
