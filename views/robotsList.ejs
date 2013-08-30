@@ -2,7 +2,7 @@
     <% list(robots, function(robot){%>
         <li class="robot" <%= (el)->el.data('robot', robot) %>>
                 <%== can.view.render('views/robotView.ejs', {
-                        robot: robot, type: type
+                        robot: robot
                 }) %>
         </li>
     <% }) %>

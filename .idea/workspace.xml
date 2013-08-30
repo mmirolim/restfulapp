@@ -7,9 +7,11 @@
     <file path="/Dummy.txt" changelist="8deed881-06ee-4205-9ebf-e0f8036d3cc4" time="1377796627517" ignored="false" />
     <file path="/index.php" changelist="8deed881-06ee-4205-9ebf-e0f8036d3cc4" time="1377746275331" ignored="false" />
     <file path="/Robots.php" changelist="8deed881-06ee-4205-9ebf-e0f8036d3cc4" time="1377741815339" ignored="false" />
-    <file path="/webapp.html" changelist="8deed881-06ee-4205-9ebf-e0f8036d3cc4" time="1377745609545" ignored="false" />
+    <file path="/webapp.html" changelist="8deed881-06ee-4205-9ebf-e0f8036d3cc4" time="1377830545770" ignored="false" />
     <file path="/custom.js" changelist="8deed881-06ee-4205-9ebf-e0f8036d3cc4" time="1377746985063" ignored="false" />
     <file path="/robotsList.ejs" changelist="8deed881-06ee-4205-9ebf-e0f8036d3cc4" time="1377825595130" ignored="false" />
+    <file path="/robotView.ejs" changelist="8deed881-06ee-4205-9ebf-e0f8036d3cc4" time="1377826300319" ignored="false" />
+    <file path="/robotsapp.js" changelist="8deed881-06ee-4205-9ebf-e0f8036d3cc4" time="1377832184503" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,23 +34,41 @@
       <file leaf-file-name="webapp.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="7" selection-start="515" selection-end="515" vertical-scroll-proportion="-11.115385">
+            <state line="16" column="18" selection-start="518" selection-end="518" vertical-scroll-proportion="-10.461538">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="robotsList.ejs" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="robotsList.ejs" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/robotsList.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="5" selection-start="292" selection-end="292" vertical-scroll-proportion="0.15704387">
+            <state line="8" column="5" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="robotsapp.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="robotView.ejs" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/robotView.ejs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="8" selection-start="792" selection-end="792" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="robotsapp.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/robotsapp.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="27" column="12" selection-start="620" selection-end="620" vertical-scroll-proportion="0.5300231">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".htaccess" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.htaccess">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -59,7 +79,7 @@
       <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="3" selection-start="860" selection-end="860" vertical-scroll-proportion="0.0">
+            <state line="56" column="5" selection-start="1278" selection-end="1278" vertical-scroll-proportion="10.461538">
               <folding />
             </state>
           </provider>
@@ -96,8 +116,10 @@
         <option value="$PROJECT_DIR$/css/custom.css" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/js/custom.js" />
-        <option value="$PROJECT_DIR$/webapp.html" />
         <option value="$PROJECT_DIR$/views/robotsList.ejs" />
+        <option value="$PROJECT_DIR$/views/robotView.ejs" />
+        <option value="$PROJECT_DIR$/webapp.html" />
+        <option value="$PROJECT_DIR$/js/robotsapp.js" />
       </list>
     </option>
   </component>
@@ -368,14 +390,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.htaccess">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/Robots.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="38" column="1" selection-start="993" selection-end="993" vertical-scroll-proportion="0.79950494">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/robotView.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="8" selection-start="792" selection-end="792" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/robotsList.ejs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="5" selection-start="280" selection-end="280" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -389,28 +427,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="3" selection-start="860" selection-end="860" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/robotsapp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="56" column="5" selection-start="1278" selection-end="1278" vertical-scroll-proportion="10.461538">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/webapp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="7" selection-start="515" selection-end="515" vertical-scroll-proportion="-11.115385">
+        <state line="16" column="18" selection-start="518" selection-end="518" vertical-scroll-proportion="-10.461538">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/views/robotsList.ejs">
+    <entry file="file://$PROJECT_DIR$/js/robotsapp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="5" selection-start="292" selection-end="292" vertical-scroll-proportion="0.15704387">
+        <state line="27" column="12" selection-start="620" selection-end="620" vertical-scroll-proportion="0.5300231">
           <folding />
         </state>
       </provider>
