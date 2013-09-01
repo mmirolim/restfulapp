@@ -1,10 +1,24 @@
 
-// Represent Data using Models
+// Handle JSON encoding of the data by registering a jQuery.ajax prefilter
 
+$.ajaxPrefilter(function(options, orig, xhr ) {
+
+    if ( options.processData
+        && /^application\/json((\+|;).+)?$/i.test( options.contentType )
+        && /^(post|put|delete)$/i.test( options.type )
+        ) {
+        options.data = JSON.stringify( orig.data );
+    }
+});
+// Represent Data using Models
 var Robot = can.Model({
     findAll: 'GET /api/robots',
     findOne: 'GET /api/robots/{id}',
-    create:  'POST /api/robots',
+    create:  {
+        url: '/api/robots',
+        type : 'POST',
+        contentType : 'application/json'
+    },
     update:  'PUT /api/robots/{id}',
     destroy: 'DELETE /api/robots/{id}'
 }, {});
