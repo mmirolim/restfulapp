@@ -16,11 +16,25 @@ var Robot = can.Model({
     findOne: 'GET /api/robots/{id}',
     create:  {
         url: '/api/robots',
-        type : 'POST',
-        contentType : 'application/json'
+        type: 'POST',
+        contentType: 'application/json'
     },
-    update:  'PUT /api/robots/{id}',
-    destroy: 'DELETE /api/robots/{id}'
+    update:  {
+        url: '/api/robots/{id}',
+        type: 'PUT',
+        contentType: 'application/json'
+    },
+    destroy: {
+        url: '/api/robots/{id}',
+        type: 'DELETE',
+        contentType: 'application/json'
+    },
+    search:  function(name){
+        return $.ajax({
+            url: '/api/robots/search/'+name,
+            type: 'GET',
+            dataType: 'json'})
+    }
 }, {});
 
 //  Managing robots
