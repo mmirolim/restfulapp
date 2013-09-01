@@ -106,14 +106,17 @@ $app->get('/api/robots/{id:[0-9]+}', function ($id) use ($app) {
 // Adds a new robot
 $app->post('/api/robots', function() use ($app) {
 
-    $robot = $app->request->getJsonRawBody();
+    //$robot = $app->request->getJsonRawBody();
+    $robotName = $app->request->get("name","string");
+    $robotType = $app->request->get("type","string");
+    $robotYear = $app->request->get("year","int");
 
     $phql = "INSERT INTO Robots (name, type, year) VALUES (:name:, :type:, :year:)";
 
     $status = $app->modelsManager->executeQuery($phql, array(
-        'name' => $robot->name,
-        'type' => $robot->type,
-        'year' => $robot->year
+        'name' => $robotName,
+        'type' => $robotType,
+        'year' => $robotYear
     ));
 
     // Create a response
@@ -122,13 +125,13 @@ $app->post('/api/robots', function() use ($app) {
     // Check if the insertion was successful
     if ($status->success() == true) {
 
-        $robot->id = $status->getModel()->id;
-        $response->setJsonContent(array('status' => 'OK', 'data' => $robot));
+        $robotId = $status->getModel()->id;
+        $response->setJsonContent(array('status' => 'OK', 'data' => array($robotId,$robotName,$robotType,$robotYear)));
 
     } else {
         // Change the HTTP status
-        $response->setStatusCode(500, "Internal Error");
-
+        //$response->setStatusCode(500, "Internal Error");
+        $response->setStatusCode(501, "Internal Server Error");
         // Send errors to the client
         $errors = array();
         foreach ($status->getMessages() as $message) {
