@@ -93,13 +93,12 @@ $app->get('/api/robots/{id:[0-9]+}', function ($id) use ($app) {
     } else {
         $response->setJsonContent(array(
             'status' => 'FOUND',
-            'data' => array(
-                'id' => $robot->id,
-                'name' => $robot->name,
-                'type' => $robot->type,
-                'year' => $robot->year
+            'id' => $robot->id,
+            'name' => $robot->name,
+            'type' => $robot->type,
+            'year' => $robot->year
             )
-        ));
+        );
     }
     return $response;
 });
@@ -123,7 +122,7 @@ $app->post('/api/robots', function() use ($app) {
     if ($status->success() == true) {
         $robot->id = $status->getModel()->id;
         //instead of array of $robot should be obj $robot
-        $response->setJsonContent(array('status' => 'OK', 'data' => $robot));
+        $response->setJsonContent(array('status' => 'OK', 'id' => $robot->id));
 
     } else {
         // Change the HTTP status

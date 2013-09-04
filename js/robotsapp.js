@@ -44,16 +44,28 @@ var Robots = can.Control({
         var el = this.element;
         el.html(can.view('robotList', new Robot.List({})));
     },
-    'span click': function(el, ev) {
-        console.log('You clicked ' + el.text());
-    },
     '.removebtn click': function(el, ev) {
         // ...destroy the corresponding to-do on the server.
         // The template will re-render itself and the
         // deleted to-do will be removed.
-        el.parent().data('robot').destroy();
+        el.parent().parent().parent().data('robot').destroy();
     }
 });
+
+// Bind click of add button to add more robots
+$('.addbtn').bind('click', function(){
+    // Get values of input fields
+    var rName = $('#name').val();
+    var rType = $('#type').val();
+    var rYear = $('#year').val();
+    // Assign values to new robot
+    var robot = new Robot({name:rName, type: rType, year: rYear});
+    //console.log(rName, rType, rYear);
+    // Save robot and before updating robot list wait save action complete
+    robot.save().then(function() {
+        $('#robots').html(can.view('robotList', new Robot.List({})));
+    }, function() {alert('Some Error');});
+})
 
 // Routing pulls the editor and the to-do board together
 // and takes care of routing as well.

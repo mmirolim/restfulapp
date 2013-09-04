@@ -24,7 +24,10 @@
                                 <div class="large-3 columns"><span class="name label success radius">{{name}}</span></div>
                                 <div class="large-3 columns"><span class="type label secondary radius">{{type}}</span></div>
                                 <div class="large-2 columns"><span class="year label secondary radius">{{year}}</span></div>
-                                <div class="large-2 columns"><span class="removebtn">Remove</span></div>
+                                <div class="large-2 columns">
+                                    <span class="removebtn">Remove</span>
+                                    <span class="editbtn">Edit</span>
+                                </div>
                             </div>
                         </div>
                         {{/this}}
@@ -36,7 +39,24 @@
         </div>
         <div class="row">
             <div class="large-12 columns">
-                <span class="addbtn">Add a robot</span>
+                <div class="large-4 columns">
+                    <label for="name">Robot name</label>
+                    <input type="text" id="name" name="name">
+                    <input type="hidden" id="id" name="id">
+                </div>
+                <div class="large-4 columns">
+                    <label for="type">Robot type</label>
+                    <input type="text" id="type" name="type">
+                </div>
+                <div class="large-4 columns">
+                    <label for="year">Robot year</label>
+                    <input type="text" id="year" name="year">
+                </div>
+                <div class="row">
+                    <div class="large-2 column large-offset-10">
+                        <button class="small addbtn">Add a robot</button>
+                    </div>
+                </div>
             </div>
         </div>
         <script src="js/jquery.min.js"></script>

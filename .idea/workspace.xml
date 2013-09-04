@@ -4,14 +4,14 @@
     <list default="true" id="8deed881-06ee-4205-9ebf-e0f8036d3cc4" name="Default" comment="" />
     <ignored path="restfullapp.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="8deed881-06ee-4205-9ebf-e0f8036d3cc4" time="1378034863022" ignored="false" />
-    <file path="/index.php" changelist="8deed881-06ee-4205-9ebf-e0f8036d3cc4" time="1378006211841" ignored="false" />
+    <file path="/Dummy.txt" changelist="8deed881-06ee-4205-9ebf-e0f8036d3cc4" time="1378232751956" ignored="false" />
+    <file path="/index.php" changelist="8deed881-06ee-4205-9ebf-e0f8036d3cc4" time="1378248313008" ignored="false" />
     <file path="/Robots.php" changelist="8deed881-06ee-4205-9ebf-e0f8036d3cc4" time="1377741815339" ignored="false" />
-    <file path="/webapp.html" changelist="8deed881-06ee-4205-9ebf-e0f8036d3cc4" time="1377843546904" ignored="false" />
+    <file path="/webapp.html" changelist="8deed881-06ee-4205-9ebf-e0f8036d3cc4" time="1378252386598" ignored="false" />
     <file path="/custom.js" changelist="8deed881-06ee-4205-9ebf-e0f8036d3cc4" time="1377746985063" ignored="false" />
     <file path="/robotsList.ejs" changelist="8deed881-06ee-4205-9ebf-e0f8036d3cc4" time="1377825595130" ignored="false" />
     <file path="/robotView.ejs" changelist="8deed881-06ee-4205-9ebf-e0f8036d3cc4" time="1377826300319" ignored="false" />
-    <file path="/robotsapp.js" changelist="8deed881-06ee-4205-9ebf-e0f8036d3cc4" time="1378014433166" ignored="false" />
+    <file path="/robotsapp.js" changelist="8deed881-06ee-4205-9ebf-e0f8036d3cc4" time="1378252665237" ignored="false" />
     <file path="/custom.css" changelist="8deed881-06ee-4205-9ebf-e0f8036d3cc4" time="1377839143213" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,16 +35,19 @@
       <file leaf-file-name="webapp.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/webapp.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="22" column="100" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0">
-              <folding />
+            <state line="29" column="32" selection-start="1485" selection-end="1485" vertical-scroll-proportion="-8.115385">
+              <folding>
+                <marker date="1378252394336" expanded="true" signature="1582:1707" placeholder="{...}" />
+                <marker date="1378252394336" expanded="true" signature="1583:1707" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.php" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="125" column="59" selection-start="3323" selection-end="3332" vertical-scroll-proportion="0.2902439">
+            <state line="139" column="21" selection-start="3760" selection-end="3760" vertical-scroll-proportion="-8.5">
               <folding />
             </state>
           </provider>
@@ -53,16 +56,16 @@
       <file leaf-file-name="Robots.php" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/models/Robots.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="18" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
+            <state line="14" column="18" selection-start="333" selection-end="333" vertical-scroll-proportion="-9.153846">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="robotsapp.js" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="robotsapp.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/robotsapp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="6" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0">
+            <state line="66" column="39" selection-start="2032" selection-end="2032" vertical-scroll-proportion="0.5681293">
               <folding />
             </state>
           </provider>
@@ -109,18 +112,18 @@
         <option value="$PROJECT_DIR$/views/robotView.ejs" />
         <option value="$PROJECT_DIR$/views/robotsList.ejs" />
         <option value="$PROJECT_DIR$/css/custom.css" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/webapp.html" />
         <option value="$PROJECT_DIR$/js/robotsapp.js" />
-        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="x" value="-9" />
+    <option name="x" value="1911" />
     <option name="y" value="-9" />
-    <option name="width" value="1938" />
-    <option name="height" value="1048" />
+    <option name="width" value="1698" />
+    <option name="height" value="1068" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -233,8 +236,8 @@
     <property name="options.lastSelected" value="vcs.Git" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="FullScreen" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -242,6 +245,9 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
     <configuration default="true" type="JavascriptDebugSession" factoryName="Local" singleton="true">
       <JSDebuggerConfigurationSettings>
         <option name="engineId" value="embedded" />
@@ -278,17 +284,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1048" extended-state="1" />
+    <frame x="1911" y="-9" width="1698" height="1068" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15421557" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17870256" sideWeight="0.67048055" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32951945" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -364,7 +370,10 @@
     <entry file="file://$PROJECT_DIR$/webapp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="100" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1378252394336" expanded="true" signature="1582:1707" placeholder="{...}" />
+            <marker date="1378252394336" expanded="true" signature="1583:1707" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -399,7 +408,10 @@
     <entry file="file://$PROJECT_DIR$/webapp.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="36" selection-start="320" selection-end="320" vertical-scroll-proportion="0.0">
-          <folding />
+          <folding>
+            <marker date="1378252394336" expanded="true" signature="1582:1707" placeholder="{...}" />
+            <marker date="1378252394336" expanded="true" signature="1583:1707" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -443,30 +455,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/webapp.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="100" selection-start="873" selection-end="873" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/Robots.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="18" selection-start="333" selection-end="333" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/robotsapp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="6" selection-start="708" selection-end="708" vertical-scroll-proportion="0.0">
+        <state line="14" column="18" selection-start="333" selection-end="333" vertical-scroll-proportion="-9.153846">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="125" column="59" selection-start="3323" selection-end="3332" vertical-scroll-proportion="0.2902439">
+        <state line="139" column="21" selection-start="3760" selection-end="3760" vertical-scroll-proportion="-8.5">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/webapp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="32" selection-start="1485" selection-end="1485" vertical-scroll-proportion="-8.115385">
+          <folding>
+            <marker date="1378252394336" expanded="true" signature="1582:1707" placeholder="{...}" />
+            <marker date="1378252394336" expanded="true" signature="1583:1707" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/robotsapp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="66" column="39" selection-start="2032" selection-end="2032" vertical-scroll-proportion="0.5681293">
           <folding />
         </state>
       </provider>
