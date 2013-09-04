@@ -48,7 +48,16 @@ var Robots = can.Control({
         // ...destroy the corresponding to-do on the server.
         // The template will re-render itself and the
         // deleted to-do will be removed.
-        el.parent().parent().parent().data('robot').destroy();
+        var datadiv = el.parent().parent().parent().data('robot');
+        datadiv.destroy();
+    },
+    '.editbtn click' : function(el, ev) {
+        var datadiv = el.parent().parent().parent().data('robot');
+        $('#id').val(datadiv.id);
+        $('#name').val(datadiv.name);
+        $('#type').val(datadiv.type);
+        $('#year').val(datadiv.year);
+        console.log(datadiv.id+' '+datadiv.name+' '+datadiv.type+' '+datadiv.year);
     }
 });
 
@@ -58,14 +67,19 @@ $('.addbtn').bind('click', function(){
     var rName = $('#name').val();
     var rType = $('#type').val();
     var rYear = $('#year').val();
+    var rId = $('#id').val();
     // Assign values to new robot
-    var robot = new Robot({name:rName, type: rType, year: rYear});
+    var robot = new Robot({id:rId, name:rName, type: rType, year: rYear});
     //console.log(rName, rType, rYear);
     // Save robot and before updating robot list wait save action complete
     robot.save().then(function() {
         $('#robots').html(can.view('robotList', new Robot.List({})));
     }, function() {alert('Some Error');});
-})
+    $('#name').val('');
+    $('#type').val('');
+    $('#year').val('');
+    $('#id').val('');
+});
 
 // Routing pulls the editor and the to-do board together
 // and takes care of routing as well.
